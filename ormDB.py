@@ -4,7 +4,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 
 engine = create_engine('sqlite:///orm.db', 
-echo = True
+echo = True,
+check_same_thread=False
 ) 
 
 
